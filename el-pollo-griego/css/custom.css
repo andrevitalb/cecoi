@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice|Ubuntu:300,400');
+
+/*-----------------
+General
+-----------------*/
+
+body , p, li, a {
+	font-family: Ubuntu, sans-serif !important;
+}
+
+hr {
+	margin: 0;
+	border: solid #e2e2e2 .7px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Spicy Rice, cursive !important;
+	font-weight: 400;
+}
+
+/*-----------------
+Intro
+-----------------*/
+
+#intro {
+	background-image: url(../images/custom/bg_shade_dark.jpg);
+	padding: 15.6rem 0 !important;
+	height: 100vh;
+}
+
+#intro h1 {
+	text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #fff;
+    margin-bottom: .6rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+#intro h3 {
+    color: #d6d6d6;
+}
+
+.main_intro {
+	padding: 35px;
+	margin-top: 10rem;
+	margin-bottom: 25%;
+}
+
+@media (max-width: 842px){
+	.main_intro{
+		margin-top: 3rem;
+	}
+
+	.main_intro > h1 {
+		font-size: 60px !important;
+	}
+
+	.main_intro > h3 {
+		font-size: 25px !important;
+	}
+}
+
+/*-----------------
+About
+-----------------*/
+
+#features {
+	background-color: #dc521e !important;
+	color: #fff !important;
+}
+
+#features p.lead {
+	color: #fff;
+	font-weight: 300;
+}
+
+#features h2 {
+	color: #fff;
+}
+
+.section-intro .with-bottom-line::after {
+	background-color: rgba(255,255,255,.5);
+}
+
+/*-----------------
+History
+-----------------*/
+
+#history {
+	padding: 10rem 0 8rem;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#history h2 {
+	color: #063b21;
+}
+
+#history p.lead {
+	color: #000;
+	font-weight: 300;
+}
+
+/*-----------------
+Quotes
+-----------------*/
+
+#testimonials {
+	padding-bottom: 5rem;
+	background-image: url(../images/custom/q_bg_shade_2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#testimonials * {
+	color: #fff;
+}
+
+#testimonials h2 {
+	font-size: 4rem !important;
+}
+
+#testimonials h2::after {
+	background-color: rgba(255,255,255,.5);
+}
+
+#testimonials .slide li p {
+	color: #949699;
+}
+
+/*-----------------
+Main Products
+-----------------*/
+
+#infos h2 {
+	color: #063b21;
+}
+
+.info-entry-content h2::after {
+	width: 100px;
+}
+
+.img_prods {
+	display: none !important;
+	width: 75%;
+}
+
+@media only screen and (max-width:900px) {
+	.img_prods {
+		display: inline-block !important;
+	}
+
+	#infos * {
+		text-align: center;
+	}
+}
+
+.half-grey {
+	background-size: cover !important;
+	background-position: top center !important;
+}
+
+.img-pollo {
+	background-image: url(../images/custom/prods/pollo.jpg) !important;
+	background-size: cover;
+}
+
+.img-paella {
+	background-image: url(../images/custom/prods/paella.jpg) !important;
+	background-size: cover;
+}
+
+.img-costilla {
+	background-image: url(../images/custom/prods/costilla.jpg) !important;
+	background-size: cover;
+}
+
+.img-chamorro {
+	background-image: url(../images/custom/prods/chamorro.jpg) !important;
+	background-size: cover;
+}
+
+.img-chorizo {
+	background-image: url(../images/custom/prods/chorizo.jpg) !important;
+	background-size: cover;
+	background-position: right center;
+}
+
+.img-cabrito {
+	background-image: url(../images/custom/prods/cabrito.jpg) !important;
+	background-size: cover;
+}
+
+.img-vinagreta {
+	background-image: url(../images/custom/prods/vinagreta.jpg) !important;
+	background-size: cover;
+}
+
+.text-part {
+	padding-top: 10.8rem;
+    padding-bottom: 10.8rem;
+}
+
+/*-----------------
+Contact
+-----------------*/
+
+#contact, #contact .overlay {
+	background-color: rgba(29,99,149,0.8) !important;
+}
+
+.enviar {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+}
+
+button {
+	color: #444;
+}
+
+button:hover {
+	background: #8a8b8c;
+}
+
+::placeholder {
+	color: #7f7f7f;
+}
+
+#correo_info {
+	font-size: 1.41rem;
+}
+
+#dir_tl {
+	margin: 4rem auto 2rem; 
+}
+
+#dir_tl h4 {
+	color: #fff;
+}
+
+.dirs {
+	padding: 0 10rem;
+}
+
+#direccs {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 850px){
+	.sidebar {
+	    position: static;
+	    width: 100%;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    margin-top: 3rem;
+	    padding: 0 !important;
+	}
+
+	.sidebar * {
+		text-align: center;
+	}
+
+	input {
+		 text-align: left !important;
+	}
+
+	.form_cont {
+		position: static;
+	    width: 100%;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    margin-bottom: 4.2rem;
+		text-align: center;
+	}
+
+
+	.form_cont h3 {
+		display: inline;
+	}
+
+	form {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.dir_inds {
+	    position: static;
+	    width: 100%;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    padding: 0 !important;
+	}
+
+	#dir_tl {
+	    position: static;
+		margin: 1.5rem 0;
+		-webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    padding: 0 !important;
+		width:100%;
+	}
+
+	.dirs {
+		padding: 0 15px;
+	}
+
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+footer {
+	color: #43454c !important;
+}
+
+.aviso {
+	color: #ff9900 !important;
+	font-weight: 600;
+}
+
+.aviso:hover {
+	color: #777 !important;
+}
+
+.yellow {
+	color: #ffc805 !important;
+	font-weight: 600;
+}
+
+.yellow:hover {
+	color: #777 !important;
+}
+
+.copyright {
+	margin-top: 3rem !important;
+}
+
+@media only screen and (max-width: 850px){
+	.copyright {
+		padding: 0 5rem;
+	}
