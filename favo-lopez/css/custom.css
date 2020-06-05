@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Raleway');
+
+
+/*-----------------
+General
+-----------------*/
+
+* {
+	font-family: Raleway, sans-serif !important;
+}
+
+.far, .fa, .fas {
+	font-family: "Font Awesome 5 Free" !important;
+}
+
+.fab {
+	font-family: "Font Awesome 5 Brands" !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Dancing Script, cursive !important;
+}
+
+hr {
+	margin: 0;
+	border: solid #e2e2e2 .7px;
+}
+
+/*-----------------
+Intro
+-----------------*/
+
+#intro {
+	background: url(../images/custom/bg_shade_dark.jpg) no-repeat left center;
+	padding: 15.6rem 0 !important;
+	background-size: cover !important;
+	background-position: left center;
+}
+
+@media (max-width: 600px){
+	#intro {
+		background-image: url(../images/custom/bg_mobile.jpg);
+		background-position:  center;
+	}
+}
+
+#intro h1 {
+	text-transform: uppercase;
+    color: #fff;
+    margin-bottom: .6rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+#intro h3 {
+    color: #d6d6d6;
+}
+
+.main_intro {
+	padding: 35px;
+	margin-bottom: 25%;
+}
+
+/*-----------------
+About
+-----------------*/
+
+#features {
+	background-color: rgba(34,34,34,.8) !important;
+	color: #fff !important;
+}
+
+#features p.lead {
+	color: #fff;
+}
+
+#features h2 {
+	color: #777;
+}
+
+/*-----------------
+History
+-----------------*/
+
+#history {
+	padding: 15rem 0 8rem;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#history h2 {
+	color: #ffca9e;
+}
+
+#history p.lead {
+	color: #000;
+}
+
+/*-----------------
+Quotes
+-----------------*/
+
+#testimonials {
+	padding-bottom: 5rem;
+	background-color: #f7f7f7;
+}
+
+#testimonials h2 {
+	font-size: 4rem !important;
+}
+
+#testimonials .slide li p {
+	color: #949699;
+}
+
+/*-----------------
+Main Products
+-----------------*/
+
+.img_prods {
+	display: none !important;
+}
+
+@media only screen and (max-width:900px) {
+	.img_prods {
+		display: inherit !important;
+	}
+}
+
+.half-grey {
+	background-size: cover !important;
+	background-position: top center !important;
+}
+
+.img-novia {
+	background-image: url(../images/custom/novia.jpg) !important;
+}
+
+.img-xv {
+	background-image: url(../images/custom/xv.jpg) !important;
+}
+
+.img-gala {
+	background-image: url(../images/custom/gala.jpg) !important;
+}
+
+.img-graduacion {
+	background-image: url(../images/custom/graduacion.jpg) !important;
+}
+
+.img-ceremonia {
+	background-image: url(../images/custom/ceremonia.jpg) !important;
+}
+
+.text-part {
+	padding-top: 10.8rem;
+    padding-bottom: 10.8rem;
+}
+
+/*-----------------
+Products
+-----------------*/
+
+#products {
+	line-height: 0;
+	background-color: rgba(30,30,30,.8) !important;
+}
+
+
+.prod_tl {
+	padding: 10rem;
+	text-align: center;
+}
+
+.prod_tl h1 {
+	color: #ccc;
+	font-size: 6rem;
+}
+
+@media only screen and (max-width:430px) {
+	.prod_tl h1 {
+		font-size: 4rem;
+	}
+}
+
+.prod_tl h1::after {
+	left:50%;
+    display: block;
+    width: 200px;
+    content:' ';
+    border: 1.5px solid;
+    border-color: rgba(137,137,137,.4);
+    margin: 3.5rem auto 0;
+}
+
+@media only screen and (max-width: 768px){
+	#products img {
+		width: 100%;
+	}
+}
+
+/*-----------------
+Contact
+-----------------*/
+
+#contact, #contact .overlay {
+	background-color: rgba(34,34,34,.8) !important;
+}
+
+.enviar {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+}
+
+button {
+	color: #444;
+}
+
+button:hover {
+	background: #8a8b8c;
+}
+
+::placeholder {
+	color: #7f7f7f;
+}
+
+#contact h3, #contact h4, #contact h5 {
+	font-family: Raleway, sans-serif !important;
+	font-weight: 600 !important;
+}
+
+@media only screen and (max-width: 850px){
+	.sidebar {
+	    position: static;
+	    width: 100%;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    margin-top: 3rem;
+	    padding: 0 !important;
+	}
+
+	.sidebar * {
+		text-align: center;
+	}
+	
+	input {
+		 text-align: left !important;
+	}
+
+	.form_cont {
+		position: static;
+	    width: 100%;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    margin-bottom: 4.2rem;
+		text-align: center;
+	}
+
+
+	.form_cont h3 {
+		display: inline;
+	}
+
+	form {
+		display: inline-block;
+		width: 100%;
+	}
+
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+footer {
+	color: #43454c !important;
+}
+
+footer h4 {
+	font-family: Raleway, sans-serif !important;
+	font-weight: 600 !important;
+}
+
+.aviso {
+	color: #ff9900 !important;
+	font-weight: 600;
+}
+
+.aviso:hover {
+	color: #777 !important;
+}
+
+.yellow {
+	color: #ffc805 !important;
+	font-weight: 600;
+}
+
+.yellow:hover {
+	color: #777 !important;
+}
