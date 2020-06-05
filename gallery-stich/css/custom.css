@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Barlow+Semi+Condensed&display=swap');
+
+/*-----------------
+General
+-----------------*/
+
+* { font-family: Barlow Semi Condensed, sans-serif; }
+
+h1, h2, h3, h4, h5 , h6 { font-family: Anton, sans-serif; }
+
+b, strong { color: rgba(79, 89, 120, .7); }
+
+.scroll-top {
+	border-radius: 7px !important;
+	-moz-border-radius: 7px !important;
+    -webkit-border-radius: 7px !important;
+    -o-border-radius: 7px !important;
+}
+
+@media (max-width: 991px){
+	.c_info { margin-bottom: 10vh; }
+}
+
+/*-----------------
+Navbar
+-----------------*/
+
+nav a:hover { transform: translateY(15px); }
+
+nav > ul > li > a { font-size: 14px !important; }
+
+/*-----------------
+Intro
+-----------------*/
+
+#home h1 {
+	font-size: 60px;
+	line-height: 70px;
+}
+
+#intro_cont {
+	background-image: url(../img/custom/bg_shade.jpg);
+	background-position: center;
+}
+
+#about .lead {
+	font-size: 17.5px !important;
+	line-height: 25px !important;
+}
+
+.about_comp {
+	position: relative;
+  	top: 10em;
+  	transform: translateY(-50%);
+}
+
+.about_comp p {
+	font-size: 17px;
+	line-height: 23px;
+}
+
+.about_comp li {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.vig { margin-right: 20px; }
+.about_main { padding-bottom: 0; }
+#about li { list-style: none; }
+
+@media (max-width: 991px){
+	.about_comp{ text-align: center; }
+
+	.about_comp ul {
+		margin-top: 25px;
+		margin-left: -35px;
+	}
+
+	.abt_img { margin-top: 12rem; }
+	.about_comp img { display: inline-block; }
+}
+
+@media (max-width: 650px){
+	.abt_img { margin-top: 9rem; }
+}
+
+@media (max-width: 400px){
+	.abt_img { margin-top: 0; }
+}
+
+/*-----------------
+History
+-----------------*/
+
+.hist_img { text-align: center; }
+
+#history img {
+	width: 30rem;
+	display: inline;
+}
+
+
+#history .video_p {
+	width: 100% !important;
+	height: 20rem !important;
+	/*display: inline !important;*/
+}
+
+/*-----------------
+Quotes
+-----------------*/
+
+#testimonial {
+	background-image: url(../img/custom/bg_alt_shade.jpg);
+	background-size: cover;
+}
+
+#testimonial p { font-size: 18px; }
+
+.autores { font-size: 20px; }
+
+/*-----------------
+Products
+-----------------*/
+
+.prod_sect {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.prod_tl { line-height: 30px; }
+#prods_box { margin-bottom: 25px; }
+#work .item-box { border-radius: 25px; }
+.item-container { width: 100% !important; }
+.prods { padding: 35px; }
+
+.link:hover i , .link:hover h6 {
+	color: #45BC8A;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.prod_show_cont { text-align: center; }
+ 
+.prod_show {
+	width: 75% !important;
+	display: inline;
+}
+
+.prod_disp_tl { text-align: center; }
+
+.desc_txt {
+	font-size: 20px !important;
+	line-height: 26px !important;
+}
+
+.ingredients { font-size: 16px !important; }
+sub { font-size: 12px !important; }
+
+#main_prods_cont { 
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
+	justify-content: space-evenly;
+}
+
+#main_prods_cont a {
+	width: 41%;
+	max-width: 41%;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#main_prods_cont a:hover::before { 
+	visibility: visible;
+	transform: translateY(0);
+}
+
+#main_prods_cont a::before {
+	display: block;
+	position: absolute;
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 25px;
+	text-align: center;
+	overflow: hidden;
+	padding: 12% 13%;
+	visibility: hidden;
+	transform: translateY(8rem);
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#main_prods_cont a:nth-child(1)::before { content: "Bordado"; }
+#main_prods_cont a:nth-child(2)::before { content: "Camisa"; }
+#main_prods_cont a:nth-child(3)::before { content: "Playera"; }
+#main_prods_cont a:nth-child(4)::before { content: "Pantalón"; }
+
+#main_prods_cont img {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 25px;
+}
+
+@media(max-width: 991px){
+	#main_prods_cont a::before { font-size: 2rem; }
+}
+
+@media(max-width: 767px){
+	.prod_show_cont { margin-bottom: 12vh; }
+	.desc { text-align: center; }
+	#work { padding-bottom: 0; }
+	#main_prods_cont a::before { 
+		padding: 22% 27%;
+		font-size: 3rem !important;
+	}
+
+	#main_prods_cont a {
+		width: 80%;
+		max-width: 80%;
+	}
+}
+
+@media(max-width:600px){
+	#main_prods_cont a::before { 
+		padding: 22% 27%;
+		font-size: 2.4rem !important;
+	}
+}
+
+@media(max-width: 500px){
+	#main_prods_cont a::before { padding: 22% 24%; }
+}
+
+@media (max-width: 400px){
+	#main_prods_cont a::before { padding: 22% 19%; }
+}
+
+/*-----------------
+Contact
+-----------------*/
+
+input { padding: 15px; }
+
+textarea { resize: none; }
+
+button {
+	border-radius: 7px !important;
+	-moz-border-radius: 7px !important;
+    -webkit-border-radius: 7px !important;
+    -o-border-radius: 7px !important;
+}
+
+input, textarea {
+	border: 0;
+    border-bottom: 2px solid #ddd;
+}
+
+input, textarea, button {
+	font-size: 15px !important;
+	line-height: 20px !important;
+}
+
+@media (max-width: 991px){
+	#contact-info { 
+		padding-top: 0;
+		margin-top: 2rem;
+	}
+
+	#contact-info * { text-align: center; }
+
+	.contact-icon-left {
+		left: inherit;
+		position: inherit;
+		margin-bottom: 15px;
+	}
+
+	.contact-box-left { 
+		margin-bottom: 30px;
+		padding: 0;
+	}
+}
+
+@media(max-width: 767px){
+	#social { padding-bottom: 80px; }
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+.aviso {
+	color: #ff9900 !important;
+	font-weight: 600;
+}
+
+.yellow {
+	color: #ffc805 !important;
+	font-weight: 600;
+}
+
+.aviso:hover, .yellow:hover { color: #777 !important; }
+
+.str { font-weight: 600; }
