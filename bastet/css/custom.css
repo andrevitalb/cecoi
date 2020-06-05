@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Uncial+Antiqua&display=swap');
+
+/*----------------
+General
+----------------*/
+
+* a:hover { color: #777 !important; }
+
+::selection {
+	background-color: #ccc;
+	color: #fff;
+}
+
+.titles {
+	font-size: 4rem;
+	color: rgba(242, 242, 242, 0.8) !important;
+}
+
+* { font-family: Raleway, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: Uncial Antiqua, cursive; }
+
+/*----------------
+Cols
+----------------*/
+
+.col-offset-1 { margin-left: 8.333333333333333%; }
+.col-offset-3 {	margin-left: 25%; }
+
+/*----------------
+Navbar
+----------------*/
+
+header * { font-family: Uncial Antiqua, cursive; }
+
+.nav_index {
+	color: #fff !important;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav_index:hover { color: rgba(255, 255, 255, 0.5) !important; }
+
+.nav_active { color: #fff !important; }
+
+.nav-list li ul li { list-style: none; }
+
+/*----------------
+Intro
+----------------*/
+
+.home {
+	background-image: url(../images/custom/bg_shade.jpg) !important;
+	height: 100vh;
+}
+
+#menu-nav-wrap h3 a { color: #fff; }
+
+#menu-nav-wrap h3 a:hover { color: rgba(255, 255, 255, 0.5);}
+
+header .header-logo a {
+	background-image: url(../images/custom/favicon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 110px;
+	height: 110px;
+	background-size: 100%;
+}
+
+#home .scrolldown a { font-family: Uncial Antiqua, cursive; }
+
+@media only screen and (max-width: 768px){
+	header .header-logo a {
+		width: 65px;
+		height: 65px;
+		background-size: cover;
+	}
+}
+
+/*----------------
+About
+----------------*/
+
+.about { background-color: #140303 !important; }
+
+.about h3, .about span { color: #f3f3f3 !important; }
+
+.ab_text {
+	color: #a1a1a1 !important;
+	font-size: 2.3rem !important;
+}
+
+/*----------------
+Services
+----------------*/
+
+#services { background-image: url(../images/custom/about_bg.jpg); }
+
+#services .icon i , #services .icon ion-icon {
+	color: #fff !important;
+	font-size: 5rem;
+}
+
+#services h3.h05 { color: #aaa !important; }
+
+#services .service-content p { color: #a5a5a5 !important; }
+
+/*----------------
+Products
+----------------*/
+
+#portfolio { background-color: rgba(5,0,0,.5) !important; }
+
+#portfolio ion-icon { font-size: 18px; }
+
+.details-link { padding: 1.5px; }
+
+#portfolio .overlay { cursor: pointer !important; }
+
+.prods_cont {
+	width: 100%;
+	max-width: 8000px;
+}
+
+.prods_cont .col-ten {
+	margin-bottom: -10px;
+	padding: 0;
+}
+
+.prods_cont .holder { padding: 0; }
+
+.prods_cont .contain {
+	position: relative;
+	overflow: hidden;
+}
+
+.prods_cont .contain:hover .overlay::before {
+	opacity: 1;
+    visibility: visible;
+}
+
+.prods_cont img { width: 100%; }
+
+.prods_cont .overlay#corsets::before { content: "Corsets Victorianos"; }
+.prods_cont .overlay#vestidos::before { content: "Vestidos y Faldas"; }
+.prods_cont .overlay#playeras::before { content: "Playeras Strange"; }
+
+.prods_cont .overlay::before {
+	font-family: Uncial Antiqua, cursive;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    font-size: 35px;
+    padding: 35% 0 0;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+	.prods_cont [class*="col-offset"] { margin-left: 0 !important; }
+	#v_cont { margin-top: -10px; }
+}
+
+/*----------------
+Contact
+----------------*/
+
+#contact {
+	background-image: url(../images/custom/contact_bg.jpg);
+	margin-top: -10px;
+}
+
+.contact_info h6 { color: #fff !important; }
+
+.contact_info p { color: #7C7C7C !important; }
+
+#contact button.submitform { background: #ccc; }
+
+/*----------------
+Footer
+----------------*/
+
+footer { 
+	text-align: center;
+	background-color: #140303 !important;
+}
+
+footer a { color: #999 !important; }
+
+footer h4.h05 {
+	padding-bottom: 0;
+	margin-bottom: 15px;
+}
+
+.copyright * {
+    font-family: "montserrat-regular", sans-serif !important;
+    font-size: 1.4rem !important;
+}
+
+#normal, .aviso, .yellow { font-weight: 600; }
+
+.aviso:hover { color: rgba(255,153,0,.8) !important; }
+.yellow:hover { color: rgba(255,200,5,.8) !important; }
+
+
+/*------------------- Páginas Productos -------------------*/
+
+#portfolio ul { 
+	list-style: none; 
+	margin-bottom: .5em;
+}
+
+#portfolio ul li:before {
+	content: "\2022";
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+#portfolio li {
+	color: rgba(242, 242, 242, 0.4);
+	font-size: 1.75rem;
+}
+
+#portfolio #pre-list { margin-bottom: .75em; }
