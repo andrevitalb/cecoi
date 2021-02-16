@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Noto+Sans');
+
+/*---------------
+General
+---------------*/
+
+* { font-family: Noto Sans, sans-serif; }
+h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 * { font-family: Anton, sans-serif; }
+
+.highlight { color: #f08114; }
+.highlight_green { color: #737c25; }
+
+::selection {
+	color: #fff;
+	background-color: #f08114;
+}
+
+/*---------------
+Header
+---------------*/
+
+.main_logo { width: 155px; }
+
+.navbar-brand {
+	padding: 0 15px;
+	float: initial;
+}
+
+.navbar-nav {
+	margin-top: 9.6px;
+	margin-bottom: 9.6px;
+}
+
+/*---------------
+Intro
+---------------*/
+
+#intro {
+	height: 75vh;
+	min-height: 300px;
+	text-align: center;
+}
+
+#intro h1 { font-size: 95px; }
+
+#intro h4 {
+	font-size: 35px;
+	letter-spacing: 1.7px;
+	font-weight: 400;
+}
+
+@media (max-width: 555px){
+	#intro_description { margin-top: 7.5rem; }
+	#intro h1 { font-size: 65px; }
+}
+
+/*---------------
+About
+---------------*/
+
+#about-1-text { margin: 13vh 0; }
+
+#about-1 h1 { font-size: 40px; }
+
+#about-1 h3 {
+	font-size: 30px;
+	color: #000;
+}
+
+#about-1 p { font-size: 16px; }
+
+@media (max-width: 555px){
+	#about-1 {
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	#about-1 h3 { margin-bottom: 20px; }
+}
+
+/*---------------
+Quotes
+---------------*/
+
+#features * {
+	color: #fff;
+	text-align: center;
+}
+
+#features ion-icon { font-size: 40px; }
+
+#features h2, #features h4 {
+	font-family: Noto Sans, sans-serif !important;
+	font-weight: 700;
+}
+
+@media (max-width: 768px){
+	.quotes {
+		margin: 0 auto 7rem;
+		width: 75%;
+	}
+}
+
+/*---------------
+Products
+---------------*/
+
+#blog { padding-bottom: 80px; }
+
+#blog h3 {
+	font-size: 1.5em;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 768px){
+	.desc_txt{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 555px){
+	#blog h1 { text-align: center; }
+}
+
+/*---------------
+Contact
+---------------*/
+
+#call-to-action {
+	padding-bottom: 60px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contact_form { padding-left: 0; }
+
+.contact_info {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.contact_info h6 {
+	font-weight: bold;
+	font-size: 27px;
+	color: #fff;
+}
+
+#call-to-action .contact_info p { 
+	font-size: 15.5px;
+	padding: 0;
+}
+
+.contact_info span > strong { font-weight: 450; }
+
+.contact_info a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.contact_info a:hover { color: #2590e8; }
+
+#call-to-action h1 { font-size: 50px; }
+#call-to-action h6 { font-weight: 400; }
+
+/*---------------
+Footer
+---------------*/
+
+footer * { color: #e8e8e8; }
+
+.footer-nav > li > a {
+	color: #e8e8e8;
+	font-weight: 800;
+	font-size: 16px;
+}
+
+.footer-nav > li > a:hover { color: #737c25; }
+
+#footer_copy > p {
+	color: #e8e8e8;
+	font-size: 13.5px;
+}
+
+.yellow, .aviso { font-weight: 600; }
+
+.aviso {
+	color: #ccc !important;
+	border-bottom: 2px solid;
+}
+
+.aviso:hover, .yellow:hover { color: #fff !important; }
+
+.yellow { color: #ffc805 !important; }
+
+#footer_copy b, .yellow { font-size: 14px; }
+
+.footer_social { text-align: right; }
+
+@media (max-width: 767px){
+	.footer_social { text-align: center; }
+}
+
+@media (max-width: 555px){
+	.footer-nav > li > a { font-size: 15px; }
+	#footer_copy > p { font-size: 15px; }
+	#footer_copy b, .yellow { font-size: 16px; }
+}
