@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Neucha');
+
+/*------------------
+General
+------------------*/
+
+body {
+	font-family: Muli, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Neucha, sans-serif !important;
+	letter-spacing: 1.3px !important;
+	/*color: #8D4616;*/
+}
+
+/*------------------
+Navbar
+------------------*/
+
+.header a:hover {
+	color: #EF8118 !important;
+	background-color: rgba(255,255,255,.5);
+}
+
+@media (max-width: 767px){
+	.header .logo a {
+		margin: 10px 0 !important;
+		width: 120px !important;
+	}
+	
+}
+
+/*------------------
+General Background
+------------------*/
+
+.background_main {
+	background-image: url(../img/custom/bg.jpg);
+}
+
+.background_main_shade {
+	background-image: url(../img/custom/products/pr_main_crop.jpg);
+}
+
+.inner-intro h1, .inner-intro h2, .inner-intro h3, .inner-intro h4, .inner-intro h5, .inner-intro h6 {
+	color: #fff !important;
+}
+
+.titulares {
+	line-height: 100px;
+}
+
+.titulares_mini {
+	line-height: 65px !important;
+}
+
+#contact_tl {
+	font-size: 85px;
+}
+
+@media (max-width: 500px){
+	#contact_tl {
+		font-size: 3rem !important;
+	}
+
+	.titulares { 
+		font-size: 55px !important;
+		line-height: 65px !important; 
+	}
+
+	.titulares_mini { 
+		font-size: 38px !important;
+		line-height: 48px !important; 
+	}
+}
+
+/*------------------
+Product Header
+------------------*/
+
+.single {
+	height: 300px;
+}
+
+.prod_title {
+	font-size: 40px;
+	line-height: 50px !important;
+}
+
+.prods {
+	padding-top: 75px;
+}
+
+/*------------------
+Product Related
+------------------*/
+
+.related {
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+/*------------------
+About Us
+------------------*/
+
+div.wrapper > section.about_us {
+	padding-bottom: 55px;
+}
+
+.about_main {
+	padding-bottom: 90px;
+}
+
+@media (max-width: 991px){
+	.about_main {
+	    padding-bottom: 80px;
+	}
+}
+
+/*------------------
+Services
+------------------*/
+
+.services i {
+	color: #8D4616;
+}
+
+/*-----------------
+Quotes
+-----------------*/
+
+.quote-author {
+	margin-top: 40px;
+	font-size: 18px;
+}
+
+.vision {
+	padding-top: 75px;
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+@media(max-width: 767px){
+	.more_prods{
+		margin-top: 15px;
+	}
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+.aviso {
+	color: #ff9900 !important;
+	font-weight: 600;
+}
+
+.aviso:hover {
+	color: #777 !important;
+}
+
+.yellow {
+	color: #ffc805 !important;
+	font-weight: 600;
+}
+
+.yellow:hover {
+	color: #777 !important;
+}
+
+a.yellow:hover {
+	color: #000;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.footer_logo {
+	text-align: center;
+}
+
+.footer_logo > div{
+	display: inline-block;
+}
+
+.soc_ic{
+	font-size: 17pt;
+}
+
+/*.footer_info p{
+	font-size: 14pt;
+	line-height: 16pt;
+}*/
+
+.footer_cont {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: auto;
+}
+
+@media (max-width: 991px){
+	.footer_cont {
+		margin-bottom: 1.8rem;
+	}
+}
+
+/*.link-small {
+	font-size: 14pt;
+}*/
+
+.link-small > li {
+	line-height: 20pt;
+	font-weight: normal;
+}
+
+.footer .social a, .footer .social a i {
+	font-size: 18px !important;
+}
+
+.footer_padd {
+	padding-top: 50px !important;
+}
+
+.copyright {
+	padding-bottom: 45px !important;
+	padding-top: 40px !important;
+}
+
+/*----------------------------
+Ind Products
+----------------------------*/
+
+.desc_txt {
+	font-size: 20px !important;
+	line-height: 30px !important;
+}
+
+.ingredients {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.splenda_tl {
+	line-height: 5px;
+}
+
+sub {
+	font-size: 1em !important;
+}
+
+.prods_bg {
+	background-image: url(../img/custom/products/pr_main_crop.jpg);
+}
+
+.btn-white-line {
+	font-family: Neucha, sans-serif !important;
+}
+
+/*------------------
+Contact
+------------------*/
+
+input[type = "checkbox"] {
+	appearance: checkbox !important;
+    -webkit-appearance: checkbox !important;
+    display: none !important;
+}
