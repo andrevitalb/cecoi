@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'gandhi_sansbold';
+    src: url('../fonts/gandhi-sans/gandhisans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gandhi-sans/gandhisans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Colors:
+
+Brown: rgba(109,74,49,1);
+		#6d4a24;
+Greenish: rgba(127,110,26,1);
+		#7f6e1a;
+*/
+
+/*-------------------
+General
+-------------------*/
+
+body {
+	font-family: Calibri, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "gandhi_sansbold", sans-serif !important;
+}
+
+hr {
+	margin: 0;
+	border: solid #e2e2e2 .7px;
+}
+
+/*-----------------
+Intro
+-----------------*/
+
+#intro {
+	background-image: url(../images/custom/bg_shade.jpg);
+	padding: 9.6rem 0;
+	height: 100vh;
+}
+
+#intro h1 {
+    letter-spacing: .5rem;
+    color: #fff;
+    margin-bottom: .6rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+#intro h3 {
+    color: #d6d6d6;
+}
+
+.main_intro {
+	padding: 35px;
+	margin-top: 10rem;
+	margin-bottom: 25%;
+}
+
+@media (max-width: 900px){
+	#intro {
+		height: 100vh;
+		padding: 15.6rem 0;
+	}
+}
+
+/*-----------------
+About
+-----------------*/
+
+#features {
+	background-color: #6d4a24;
+	text-align: center;
+}
+
+#features h2 {
+	color: #fff;
+}
+
+#features p {
+	color: #c9c9c9;
+}
+
+#features .section-intro .with-bottom-line::after {
+	background-color: #c9c9c9;
+}
+
+video {
+	display:inline-block;
+	width: 90%;
+}
+
+/*-----------------
+History
+-----------------*/
+
+#history {
+	padding: 12rem 0 8rem;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#history h2 {
+	color: #7f6e1a;
+}
+
+#history p.lead {
+	color: #000;
+}
+
+#history .section-intro .with-bottom-line::after {
+	background-color: #7f6e1a;
+}
+
+/*-----------------
+Quotes
+-----------------*/
+
+#testimonials {
+	padding-bottom: 5rem;
+	background-color: #f7f7f7;
+}
+
+#testimonials h2 {
+	font-size: 4rem !important;
+}
+
+#testimonials .slide li p {
+	color: #949699;
+}
+
+#testimonials h2::after {
+	background-color: #6d4a24;
+}
+
+/*-----------------
+Main Products
+-----------------*/
+
+.info-entry-content h2::after {
+	background-color: rgba(109,74,49,.8);
+	width: 80px;
+}
+
+.img_prods {
+	display: none !important;
+}
+
+.row.info-entry-content {
+	height: 686px;
+}
+
+@media only screen and (max-width:900px) {
+	.img_prods {
+		display: inherit !important;
+	}
+
+	.row.info-entry-content {
+		height: inherit;
+	}
+}
+
+.half-grey {
+	background-size: cover !important;
+	background-position: top center !important;
+}
+
+.img-sazonador {
+	background-image: url(../images/custom/sazonador.jpg) !important;
+}
+
+.img-salsa {
+	background-image: url(../images/custom/salsa.jpg) !important;
+}
+
+.img-picante {
+	background-image: url(../images/custom/picante.jpg) !important;
+}
+
+.text-part {
+	padding-top: 20rem;
+    padding-bottom: 16rem;
+    height: 100%;
+}
+
+/*-----------------
+Products
+-----------------*/
+
+#products {
+	line-height: 0;
+	background-color: rgba(30,30,30,.8) !important;
+}
+
+
+.prod_tl {
+	padding: 10rem;
+	text-align: center;
+}
+
+.prod_tl h1 {
+	color: #ccc;
+	font-size: 6rem;
+}
+
+@media only screen and (max-width:430px) {
+	.prod_tl h1 {
+		font-size: 4rem;
+	}
+}
+
+.prod_tl h1::after {
+	left:50%;
+    display: block;
+    width: 200px;
+    content:' ';
+    border: 1.5px solid;
+    border-color: rgba(137,137,137,.4);
+    margin: 3.5rem auto 0;
+}
+
+@media only screen and (max-width: 768px){
+	#products img {
+		width: 100%;
+	}
+}
+
+/*-----------------
+Contact
+-----------------*/
+
+#contact, #contact .overlay {
+	background-color: rgba(109,74,49,1) !important;
+}
+
+.enviar {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+}
+
+button {
+	color: #444;
+	font-weight: 600;
+}
+
+button:hover {
+	background: #8a8b8c;
+}
+
+::placeholder {
+	color: #c9c9c9;
+}
+
+.cinfo p {
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 850px){
+	.sidebar {
+	    position: static;
+	    width: 100%;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    margin-top: 3rem;
+	    padding: 0 !important;
+	}
+
+	.sidebar * {
+		text-align: center;
+	}
+	
+	input {
+		 text-align: left !important;
+	}
+
+	.form_cont {
+		position: static;
+	    width: 100%;
+	    -webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    transform: translateY(0);
+	    margin-bottom: 4.2rem;
+		text-align: center;
+	}
+
+
+	.form_cont h3 {
+		display: inline;
+	}
+
+	form {
+		display: inline-block;
+		width: 100%;
+	}
+
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+footer {
+	color: #43454c !important;
+}
+
+.aviso {
+	color: #ff9900 !important;
+	font-weight: 600;
+}
+
+.aviso:hover {
+	color: #777 !important;
+}
+
+.yellow {
+	color: #ffc805 !important;
+	font-weight: 600;
+}
+
+.yellow:hover {
+	color: #777 !important;
+}
+
+.footer-bottom {
+	text-align: center;
+}
+
+.copyright {
+	width: 80%;
+	display: inline-block;
+}
