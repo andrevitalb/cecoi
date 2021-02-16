@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Trirong:300&display=swap');
+
+/*-----------------
+General
+-----------------*/
+
+* { font-family: Raleway, sans-serif; }
+h1, h2, h3, h4, h5, h6 { 
+	font-family: Trirong, serif; 
+	color: #BB9A37;
+}
+
+.scroll-top { border-radius: 50%; }
+
+/*-----------------
+Intro
+-----------------*/
+
+#main_cont {
+	background-image: url('../img/custom/bg_shade.jpg');
+	background-size: cover;
+}
+
+@media (max-width: 767px){
+	#main_cont { background-position: 15% 20%; }
+}
+
+/*-----------------
+About
+-----------------*/
+
+#about { padding-bottom: 0; }
+
+#about_info > p {
+	font-size: 18px;
+	line-height: 27px;
+}
+
+#about_info { margin-bottom: 3rem; }
+
+.about_comp {
+	position: relative;
+  	top: 10em;
+  	transform: translateY(-50%);
+}
+
+@media (max-width: 991px){
+	.about_comp{ text-align: center; }
+
+	.about_comp img {
+		display: inline-block;
+		margin-bottom: -60px;
+	}
+}
+
+@media (max-width: 767px){
+	.about_comp img { margin-bottom: 40px; }
+}
+
+@media (max-width: 435px) {
+	.about_comp img { margin-bottom: 5rem; }
+}
+
+/*-----------------
+History
+-----------------*/
+
+#hist_txt > p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*-----------------
+Quotes
+-----------------*/
+
+#testimonial {
+	background-image: url('../img/custom/q_bg.jpg') !important;
+	background-position: 50% 20%;
+	background-size: cover;
+	height: 50vh;
+	padding: 130px 0;
+}
+
+.autores { font-size: 18px; }
+
+@media (max-width: 767px){
+	#testimonial { 
+		padding: 100px 0; 
+		height: auto;
+	}
+}
+
+@media (max-width: 450px){
+	#testimonial { padding: 80px 0; }
+}
+
+/*-----------------
+Products
+-----------------*/
+
+#contant { text-align: center; }
+
+.prod_sect { padding-bottom: 70px; }
+
+.main_prod_desc { padding-top: 5rem; }
+
+@media (max-width: 991px) {
+	.desc_main * { text-align: center; }
+}
+
+@media (max-width: 650px){
+	#contant h2 { font-size: 24px; }
+	.main_prod_desc { padding-top: 1.5rem; }
+}
+
+/*-----------------
+Social
+-----------------*/
+
+#social h3 { color: #BB9A37; }
+
+/*-----------------
+Contact
+-----------------*/
+
+form { text-align: center; }
+
+input, textarea { 
+	border: none !important;
+	border-bottom: 1px #ccc solid !important;
+	padding-bottom: 15px !important;
+}
+
+form button { 
+	width: 60% !important;
+	border-radius: 55px !important;
+}
+
+
+
+@media (max-width: 991px){
+	#contact-info { padding-top: 0; }
+
+	#contact-info * { text-align: center; }
+
+	.contact-icon-left {
+		left: inherit;
+		position: inherit;
+		margin-bottom: 15px;
+	}
+
+	.contact-box-left { margin-bottom: 30px; }
+
+	.contact-box-left { padding: 0; }
+
+	#conts { margin-bottom: 30px; }
+}
+
+/*-----------------
+Social Follow
+-----------------*/
+
+.link:hover i , .link:hover h6 {
+	color: #EBA2B1;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+.aviso {
+	color: #ff9900 !important;
+	font-weight: 600;
+}
+
+.aviso:hover, .yellow:hover { color: #777 !important; }
+
+.yellow {
+	color: #ffc805 !important;
+	font-weight: 600;
+}
