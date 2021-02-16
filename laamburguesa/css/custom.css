@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan|Poppins');
+
+/*------------------
+General
+------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Bevan, cursive;
+	font-weight: 100;
+	color: #422918;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+}
+
+a {
+	color: #422918;
+}
+
+a:hover {
+	color: #93C01F !important;
+	transition: all 0.25s ease 0s;
+}
+
+.spacer-0 {
+	height: 7.5rem;
+	width: 100%;
+}
+
+/*------------------
+Intro
+------------------*/ 
+
+.inner-intro h1, .inner-intro h2, .inner-intro h3, .inner-intro h4, .inner-intro h5, .inner-intro h6 {
+	color: #fff !important;
+}
+
+.index-slider h1 {
+    font-size: 55px !important;
+    line-height: 60px !important;
+}
+
+.h2 {
+	font-size: 45px;
+	line-height: 50px;
+}
+
+@media (max-width: 430px){
+	#contact_tl { font-size: 29px; }
+	.index-slider h1 {
+		font-size: 47px !important;
+		line-height: 55px !important;
+	}
+}
+
+/*------------------
+About Us
+------------------*/
+
+.h1 { letter-spacing: 6px !important; }
+
+@media (max-width: 500px){
+	#ab_tl { font-size: 39px; }
+}
+
+/*------------------
+Navbar
+------------------*/
+
+.navigation > ul > li > a{
+	font-size: 15px;
+	line-height: 25pt;
+}
+
+/*-----------------------
+Main Products Slider
+-----------------------*/
+
+@media (max-width: 991px){
+	#contant .item {
+		text-align: center;
+	}
+
+	#contant .item ul {
+		padding: 0;
+	}
+
+	#contant .item ul li {
+		list-style: none;
+	}
+}
+
+@media (max-width: 414px){
+	#contant {
+		text-align: center;
+	}
+}
+
+/*------------------
+Product Header
+------------------*/
+
+.single {
+	height: 100%;
+}
+
+.prod_title {
+	font-size: 40px;
+	line-height: 50px;
+}
+
+/*------------------
+Product Related
+------------------*/
+
+.related {
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+/*------------------
+About Us
+------------------*/
+
+div.wrapper > section.about_us {
+	padding-bottom: 55px;
+}
+
+#about {
+	background-color: #e2e2e2 !important;
+}
+
+#about .lead {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+#hist_txt p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@media (max-width: 414px){
+	#about_text {
+		text-align: center;
+	}
+
+	#about_text h4 {
+		margin-top: 40px;
+	}
+}
+
+/*-----------------
+Quotes
+-----------------*/
+
+#testimonial {
+	padding-top: 75px;
+}
+
+#testimonial i {
+	color: #fff;
+}
+
+.quote-author {
+	margin-top: 40px;
+	font-size: 18px;
+}
+
+/*-----------------
+CTA
+-----------------*/
+
+.cta_box { background-color: #422918 !important; }
+
+@media (max-width: 767px){
+	#action-box { text-align: center; }
+	#action-box a { margin-top: 20px; }
+}
+
+/*-----------------
+Contact
+-----------------*/
+
+button:hover { color: #93C01F !important; }
+
+#place_icon { font-size: 20px; }
+
+@media (max-width: 414px){
+	.contact_main * { text-align: center; }
+	.contact * { padding: 0; }
+}
+
+/*-----------------
+Footer
+-----------------*/
+
+.yellow, .aviso { font-weight: 600; }
+
+.aviso {
+	color: #ff9900 !important;
+	font-weight: 600;
+}
+
+.aviso:hover, .yellow:hover { color: #777 !important; }
+.yellow { color: #ffc805 !important; }
+
+.footer_logo { text-align: center; }
+.footer_logo > div{ display: inline-block; }
+.soc_ic{ font-size: 17pt; }
+
+.footer_info p{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.footer_cont {
+	display: block;
+	margin-top: 1.8em;
+	margin-bottom: auto;
+}
+
+.link-small { font-size: 16px; }
+
+.link-small > li {
+	line-height: 20pt;
+	font-weight: normal;
+}
+
+.footer .link a { font-size: 11pt; }
+
+/*-----------------
+Products_Page
+-----------------*/
+
+.prods { text-align: center; }
+
+#work { padding-top: 0 !important; }
+
+.pr_cont {
+	width: 90%;
+	display: inline-block;
+}
+
+.pr_cot h2 { display: inline-block; }
+
+#multi_prods { margin-top: 25px; }
+
+.prods p {
+	font-size: 20px;
+	margin-bottom: 3.5rem;
+}
+
+#work h2 { font-size: 31px; }
+
+#laamb_ttl { font-size: 29px !important; }
+
+#work .laamb { margin-bottom: 2rem; }
+
+.laamb {
+	width: 60%;
+	display:inline-block;
+}
+
+@media (max-width: 500px){
+	#prods_tl { font-size: 35px; }
+	#laamb_ttl { font-size: 24px !important; }
+}
+
+/*-----------------
+Ind_Prods
+-----------------*/
+
+.prod_show_cont { text-align: center; }
+
+.prod_show {
+	display: inline;
+	margin-bottom: 20px;
+}
+
+.desc_txt {
+	font-size: 20px !important;
+	line-height: 26px !important;
+}
+
+.prod_show_cont, .desc_cont { margin: 10% auto; }
+
+@media (max-width: 414px){
+	.desc .prod_title { font-size: 30px; }
+	.desc_cont { text-align: center; }
+}
